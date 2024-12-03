@@ -58,7 +58,7 @@ fun main() {
 
         // Presents the option to perform another calculation or to exit the program
         print("Would you like to perform another calculation? Enter yes or no to proceed: ")
-        multipleCalculation = readlnOrNull()?.toLowerCase() == "yes"
+        multipleCalculation = readlnOrNull()?.lowercase() == "yes"
 
     }
 }
