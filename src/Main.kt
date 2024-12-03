@@ -53,8 +53,9 @@ fun main() {
             else -> "Invalid operation"
         }
 
-        // Presents the result of the operation
-        println("Result: $result")
+        // Presents the result of the operation and limits it to two decimal places
+        val endResult = if (result is Double) String.format("%.2f", result) else result
+        println("Result: $endResult")
 
         // Presents the option to perform another calculation or to exit the program
         print("Would you like to perform another calculation? Enter yes or no to proceed: ")
